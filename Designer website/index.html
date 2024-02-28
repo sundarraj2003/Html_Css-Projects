@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenSpace Designs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color: #f2f2f2;
+            color:#1a237e;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        
+        .Nav_bar_container{
+            background-image: url(images/pexels-vecislavas-popa-1571453.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position:center;
+            height:100vh ;
+            width:99vw;
+        }
+        
+        .nav_bar{
+            display: flex;
+            justify-content: space-between;
+            padding:10px;
+            border:3px solid transparent;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .Logo{
+            color:whitesmoke;
+            margin-left: 20px;
+            cursor:none;
+        }
+        .nav_bar ul{
+            display: flex;
+            background-color: transparent;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: row;
+        }
+        .nav_bar ul li {
+            padding:15px;
+            list-style: none;
+            color:lavenderblush;
+        }
+        .nav_bar ul li a{
+            padding:15px;
+            text-decoration: none;
+            color:lavenderblush;
+        }
+        .nav_bar ul li a:hover{
+            cursor: pointer;
+            color:white;
+        }
+        #head{
+            color:#333;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        
+        .content{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        label{
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .content form{
+            background: transparent;
+            padding: 15px;
+            border:3px solid transparent;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;  
+            height:40vh;
+            width:50vw;      
+        }
+        input[type="text"] {
+            background-color: rgb(231, 231, 231);
+            border:none;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            height:3vh;
+            width:30vw;
+            color:black;
+            font-size: 20px;
+            padding:10px;
+            
+        }
+
+        ::placeholder{
+            color: #333;
+            font-weight: bold;
+        }
+        input input:focus{
+            border:none;
+        }
+        
+        button {
+            border: none;
+            border-radius: 20px;
+            color: #333;
+            background-color: rgb(231, 231, 231);
+            outline: none;
+            height: 40px;
+            width: 80px;
+            margin-top: 20px;
+            font-size: 21px;
+            font-weight: bold;
+        }
+        button:hover {
+            border: none;
+            cursor:pointer;
+            background-color: white;
+        }
+        #project{
+            color: #1a237e;
+            margin-top: 30px;
+            font-size: 35px;
+        }
+        .sample_projects{
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            justify-content: space-evenly;
+            align-items: baseline;
+            
+        }
+        img{
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+            border:3px solid transparent;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            object-fit: cover;
+            transition: 1s;
+            margin:20px 0px;
+        }
+        img:hover{
+            transform: scale(1.1);
+            z-index: 2;
+        }
+        .our_details{
+            background-color: darkslategrey;
+            color:#f2f2f2;
+        }
+        .adress_continer{
+            padding:10px;
+        }
+        .adress_detail_container{
+            margin-left: 20px;
+            padding:10px;
+        }
+        .adress_detail_container h3{
+            padding:5px;
+            text-align: start;
+        }
+        .developer_details{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-between;     
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- navigation bar -->
+        <div class="Nav_bar_container" id="home">
+            <!-- navigation logo -->
+            <div class="nav_bar">
+                <div class="Logo">
+                    <h1>ZenSpace</h1>
+                </div>
+                <!-- navigation bar items -->
+                <div class="navbar_details">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#project_all">Designs</a></li>
+                        <li><a href="#Contacts">Contacts</a></li>
+                        <li><a href="#project_all">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- home page contents -->
+            <center id="head"><h2>BUILD OUR DREAM HOME WITH OUR TEAM !!!</h2></center>
+            <div class="content">
+                <form action="#">
+                    <label><h1>Welcome To ZenSpace Designs</h1></label>
+                    <input type="text" placeholder="Hey what I help you?">
+                    <button>OK</button>
+                </form>
+            </div>
+        </div>
+        <!-- our projects -->
+        <div class="project_container" id="project_all">
+            <center><h1 id="project">Projects</h1></center>
+            <!-- project list -->
+            <div class="sample_projects" >
+                <div class="project">
+                    <a href="#"><img src="images/pexels-jean-van-der-meulen-1457842.jpg" alt="project_1"></a>
+                </div>
+                <div class="project">
+                    <a href="#"><img src="images/pexels-vecislavas-popa-1571453.jpg" alt="project_2"></a>
+                </div>
+                <div class="project">
+                    <a href="#"><img src="images/pexels-vecislavas-popa-1643383.jpg" alt="project_3"></a>
+                </div>
+                <div class="project">
+                    <a href="#"><img src="images/pexels-thomas-balabaud-1579739.jpg" alt="project_4"></a>
+                </div>
+                <div class="project">
+                    <a href="#"><img src="images/pexels-jean-van-der-meulen-1543447.jpg" alt="project_5"></a>
+                </div>
+                <div class="project">
+                    <a href="#"><img src="images/pexels-mark-2724749.jpg" alt="project_6"></a>
+                </div>
+            </div>
+        </div>
+        <!-- company details -->
+        <div class="our_details" id="Contacts">
+            <div class="adress_continer">
+                <div class="adress_heading_container">
+                    <h2>Contact:</h2>
+                </div>
+                <div class="adress_detail_container">
+                    <h3><i class="fas fa-user"></i> Velvan (C.E.O of ZenSpace)</h3>
+                    <h3><i class="fas fa-envelope"></i> ZenSpace@gmail.com</h3>
+                    <h3><i class="fas fa-phone"></i> 04532-06543</h3>
+                    <h3><i class="fas fa-map-marker-alt"></i> 3/21,north chennai,chennai-600028</h3>
+                    <h3><i class="fab fa-facebook"></i> ZenSpace Designs</h3>
+                    <h3><i class="fab fa-instagram"></i> ZenSpace_Designs</h3>
+                </div>
+                <hr>
+                <!-- developer details -->
+                <h3>Developer@contact</h3>
+                <div class="developer_details">
+                    <h5><i class="fas fa-user"> Sundarraj</i></h5>
+                    <h5><i class="fas fa-envelope"> sundarraj3214@gmail.com</i></h5>
+                    <h5><i class="fas fa-phone"> 7010814306</i></h5>
+                    <h5><i class="fab fa-github"> sundarraj332</i></h5>
+                    <h5><i class="fab fa-instagram"> naughty_gamer_sundar</i></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
